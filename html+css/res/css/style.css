@@ -18,18 +18,24 @@
     --sec-1-border: #a9b4d0;
     --sec-1-offwhite: #f3f3f5;
     /* section 4 variables below */
-        --sec-4-bg: #f3f3f3;
+
+    --sec-4-bg: #f3f3f3;
         --sec-4-primary: #182a72;
         --sec-4-border: #9ea8d1;
         --sec-4-active: #11adc6;
         --sec-4-card: #dbe4ea;
         --sec-4-text-muted: #42538f;
         --sec-4-white: #ffffff;
+    /* section 5 variables below */
+    
+        --sec-5-bg: #f3f3f3;
+        --sec-5-heading: #1b2a73;
+        --sec-5-logo: #b7b7b7;
 }
 
 * {
     font-family: "DM Sans", sans-serif;
-        font-optical-sizing: auto;
+    font-optical-sizing: auto;
 }
 
 body {
@@ -2006,6 +2012,141 @@ body {
 
 /* section 5 css starts here */
 
+.sec-5-section {
+    background: var(--sec-5-bg);
+    padding: 86px 0 92px;
+}
 
+.sec-5-container {
+    max-width: 1120px;
+}
+
+.sec-5-heading {
+    margin: 0 0 78px;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 300;
+    color: var(--sec-5-heading);
+    letter-spacing: -0.3px;
+}
+
+.sec-5-heading strong {
+    font-weight: 800;
+    color: var(--sec-5-heading);
+}
+
+.sec-5-logo-row {
+    row-gap: 34px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-5-logo-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-5-logo-box {
+    width: 100%;
+    min-height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.95;
+}
+
+.sec-5-logo-box img {
+    max-width: 100%;
+    height: auto;
+    max-height: 62px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.72;
+    transition: opacity 0.25s ease;
+}
+
+.sec-5-logo-box:hover img {
+    opacity: 0.9;
+}
+
+@media (min-width: 992px) {
+    .sec-5-logo-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sec-5-section {
+        padding: 72px 0 78px;
+    }
+
+    .sec-5-heading {
+        margin-bottom: 58px;
+        font-size: 30px;
+    }
+
+    .sec-5-logo-box {
+        min-height: 86px;
+    }
+
+    .sec-5-logo-box img {
+        max-height: 56px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sec-5-section {
+        padding: 56px 0 64px;
+    }
+
+    .sec-5-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .sec-5-heading {
+        font-size: 28px;
+        margin-bottom: 42px;
+    }
+
+    .sec-5-logo-row {
+        row-gap: 26px;
+    }
+
+    .sec-5-logo-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .sec-5-logo-box {
+        min-height: 82px;
+    }
+
+    .sec-5-logo-box img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sec-5-heading {
+        font-size: 25px;
+        margin-bottom: 36px;
+    }
+
+    .sec-5-logo-box {
+        min-height: 74px;
+    }
+
+    .sec-5-logo-box img {
+        max-height: 44px;
+    }
+}
 
 /* section 5 css ends here */
+/* section 6 css starts here */
+
+
+
+/* section 6 css ends here */
