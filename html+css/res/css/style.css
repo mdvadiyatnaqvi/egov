@@ -8,7 +8,7 @@
     --muted: #4b5c8d;
     --orange: #f4a637;
     --light-border: #d9deea;
-/* section 1 variable below */
+    /* section 1 variable below */
 
     --sec-1-primary: #1d2f87;
     --sec-1-blue: #2d87d3;
@@ -17,10 +17,19 @@
     --sec-1-dark: #0f172a;
     --sec-1-border: #a9b4d0;
     --sec-1-offwhite: #f3f3f5;
+    /* section 4 variables below */
+        --sec-4-bg: #f3f3f3;
+        --sec-4-primary: #182a72;
+        --sec-4-border: #9ea8d1;
+        --sec-4-active: #11adc6;
+        --sec-4-card: #dbe4ea;
+        --sec-4-text-muted: #42538f;
+        --sec-4-white: #ffffff;
 }
+
 * {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
 }
 
 body {
@@ -476,7 +485,7 @@ body {
 .navbar-toggler-icon {
     background-image: none;
     width: 28px;
-        height: 20px;
+    height: 20px;
     position: relative;
     display: inline-block;
 }
@@ -1212,7 +1221,7 @@ body {
 
 .sec-2-section {
     padding: 70px 0 40px;
-    background: #f3f3f3;
+    /* background: #f3f3f3; */
 }
 
 .sec-2-wrapper {
@@ -1688,3 +1697,315 @@ body {
 }
 
 /* section 3 css ends here */
+/* section 4 css starts here */
+
+.sec-4-section {
+    padding: 86px 0 68px;
+    background: var(--sec-4-bg);
+}
+
+.sec-4-container {
+    max-width: 980px;
+}
+
+.sec-4-heading {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #31428f;
+    margin: 0 0 28px;
+    letter-spacing: -0.3px;
+}
+
+.sec-4-heading strong {
+    font-weight: 800;
+    color: var(--sec-4-primary);
+}
+
+.sec-4-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    margin-bottom: 58px;
+}
+
+.sec-4-tab-btn {
+    min-width: 126px;
+    height: 38px;
+    padding: 8px 22px;
+    border-radius: 999px;
+    border: 1.4px solid var(--sec-4-border);
+    background: transparent;
+    color: var(--sec-4-primary);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.sec-4-tab-btn:hover,
+.sec-4-tab-btn:focus {
+    color: var(--sec-4-primary);
+    border-color: var(--sec-4-primary);
+}
+
+.sec-4-tab-btn.sec-4-active {
+    background: var(--sec-4-active);
+    border-color: var(--sec-4-active);
+    color: var(--sec-4-white);
+}
+
+.sec-4-tab-pane {
+    display: none;
+}
+
+.sec-4-tab-pane.sec-4-show {
+    display: block;
+}
+
+.sec-4-grid {
+    row-gap: 28px;
+}
+
+.sec-4-card {
+    background: var(--sec-4-card);
+    border-radius: 22px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 374px;
+}
+
+.sec-4-card-media {
+    position: relative;
+    height: 184px;
+    overflow: hidden;
+    background: #d0d9df;
+}
+
+.sec-4-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sec-4-card-body {
+    padding: 24px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sec-4-card-title {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--sec-4-primary);
+    margin: 0 0 22px;
+    text-transform: none;
+    min-height: 42px;
+}
+
+.sec-4-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 10px;
+    padding: 0;
+    margin: 0 0 16px;
+    list-style: none;
+    color: var(--sec-4-text-muted);
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.sec-4-card-meta li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.sec-4-card-meta li+li::before {
+    content: "•";
+    margin-right: 10px;
+    color: var(--sec-4-primary);
+    font-weight: 700;
+}
+
+.sec-4-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.sec-4-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24px;
+    padding: 4px 10px;
+    border-radius: 7px;
+    background: #f7f7f7;
+    color: var(--sec-4-text-muted);
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.sec-4-footer {
+    margin-top: 24px;
+}
+
+.sec-4-see-all {
+    min-width: 72px;
+    height: 38px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 999px;
+    background: #56bfd2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.sec-4-see-all:hover {
+    background: #3fb2c8;
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .sec-4-col {
+        width: 33.333333%;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .sec-4-section {
+        padding: 72px 0 58px;
+    }
+
+    .sec-4-container {
+        max-width: 1000px;
+    }
+
+    .sec-4-card {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sec-4-section {
+        padding: 60px 0 52px;
+    }
+
+    .sec-4-heading {
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+
+    .sec-4-tabs {
+        margin-bottom: 42px;
+    }
+
+    .sec-4-tab-btn {
+        min-width: 118px;
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    .sec-4-card-media {
+        height: 210px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sec-4-section {
+        padding: 44px 0 42px;
+    }
+
+    .sec-4-heading {
+        font-size: 26px;
+    }
+
+    .sec-4-tabs {
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .sec-4-tab-btn {
+        min-width: calc(50% - 6px);
+        padding: 8px 14px;
+    }
+
+    .sec-4-card {
+        min-height: auto;
+    }
+
+    .sec-4-card-media {
+        height: 220px;
+    }
+
+    .sec-4-card-body {
+        padding: 20px 16px 18px;
+    }
+
+    .sec-4-card-title {
+        font-size: 18px;
+        min-height: auto;
+    }
+
+    .sec-4-footer {
+        margin-top: 22px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sec-4-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .sec-4-heading {
+        font-size: 24px;
+    }
+
+    .sec-4-tab-btn {
+        min-width: 100%;
+    }
+
+    .sec-4-card-media {
+        height: 200px;
+    }
+
+    .sec-4-card-title {
+        font-size: 17px;
+    }
+
+    .sec-4-card-meta {
+        font-size: 11px;
+    }
+
+    .sec-4-tag {
+        font-size: 10px;
+    }
+}
+
+/* section 4 css ends here */
+
+/* section 5 css starts here */
+
+
+
+/* section 5 css ends here */
